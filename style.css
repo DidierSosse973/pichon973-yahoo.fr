@@ -1,0 +1,871 @@
+/* GENERAL */
+html,
+body {
+    font-family: 'Raleway', Times New Roman, Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS affiné au fur et à mesrure avec un exemple*/
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexColumnCentre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColumnBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.decorationNone {
+    text-decoration: none;
+}
+
+.bordureNone {
+    border: none;
+}
+
+.texteGras {
+    font-weight: bold;
+}
+
+.colorBleu {
+    color: #0065fc;
+}
+
+.colorBleuClair {
+    color: #deebff
+}
+
+.colorGris {
+    color: #f2f2f2;
+}
+
+.colorGrisFoncer {
+    color: rgb(224, 218, 218);
+}
+
+.backBleu {
+    background-color: #0065fc;
+}
+
+.backGris {
+    background-color: #f2f2f2;
+}
+
+.bigger {
+    font-size: large;
+}
+
+/*NAV*/
+.sizeNav {
+    height: auto;
+    width: 100%;
+}
+
+.sizeliens {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sizelien12 {
+    display: flex;
+    width: auto;
+}
+
+.sizelien {
+    width: 140px;
+    height: 99px;
+}
+
+.colorlienBlack {
+    color: black;
+}
+
+.bordureNav {
+    border-top: 1px solid transparent;
+}
+
+.bordureNav:hover {
+    border-top: 1px solid #0065fc;
+    cursor: pointer;
+}
+
+.bordureNav:hover>a {
+    color: #0065fc;
+}
+
+/* HEADER */
+.desktopNone {
+    display: none;
+}
+
+.bordureSearch {
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+}
+
+.paddingSearch {
+    padding-left: 20px;
+}
+
+.styleRecherche {
+    display: flex;
+}
+
+.recherche {
+    width: 230px;
+    height: 50px;
+    font-size: medium;
+    color: black;
+    font-weight: bold;
+}
+
+.iconSize {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.buttonSearch {
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Filtres */
+.margeFiltres {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+}
+
+.margeFiltreTitre {
+    margin-right: 20px;
+}
+
+.positionIcon {
+    display: flex;
+}
+
+.filtreTexteIcon {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.filtreTexteIcon:hover>.filtreTexte {
+    color: #0065fc;
+}
+
+.filtreTexteIcon:hover>.filtreIcon {
+    color: white;
+    background-color: #0065fc;
+}
+
+.filtreTexte {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+
+.filtreIcon {
+    border-left: 0px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065fc;
+    background-color: #deebff;
+}
+
+/* INFO ICON*/
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.parentIcon {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.grasIcon {
+    font-weight: bold;
+}
+
+/*HEBERGEMENTS*/
+.sizeHebergements {
+    flex: 2;
+    height: 680px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.sizePopulaire {
+    flex: 1;
+    height: 680px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.blocHebergements {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.bloc1 {
+    margin-bottom: 40px;
+}
+
+.bloc2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.cubeHebergements {
+    height: auto;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+    /*rajouter pour voir en version mobile et desktop*/
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+.cubeHebergements:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cubeDetailHebergement {
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 3%;
+    line-height: 40%;
+    font-size: small;
+}
+
+.flexAroundPop {
+    display: flex;
+}
+
+.flexStar {
+    margin-top: 12%;
+}
+
+.imageHebergement1 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 250px;
+    height: 120px;
+}
+
+.imageHebergement2 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 250px;
+    height: 120px;
+}
+
+.imageHebergement3 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 250px;
+    height: 120px;
+}
+
+.imageHebergement4 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 250px;
+    height: 120px;
+}
+
+.imageHebergement5 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 250px;
+    height: 120px;
+}
+
+.imageHebergement6 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 250px;
+    height: 120px;
+}
+
+/*Populaires*/
+.blocPopulaires {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.imagePopulaires1 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+    width: 35%;
+    height: 160px;
+}
+
+.imagePopulaires2 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+    width: 35%;
+    height: 160px;
+}
+
+.imagePopulaires3 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+    width: 35%;
+    height: 160px;
+}
+
+.blocPopulaires12 {
+    margin-bottom: 28px;
+}
+
+.cubePopulaires {
+    background-color: white;
+    height: auto;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+}
+
+.cubePopulaires:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cubeDetailPopulaires {
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Activites*/
+.Activites {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blocActivites {
+    width: 100%;
+    height: 600px;
+}
+
+.blocActivitesPetImg {
+    width: 23%;
+    height: 600px;
+}
+
+/*Réglage bloc*/
+.cubeActivites {
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #fbf9f9;
+}
+
+.cubeActivites:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.cubeActivitesPetImg {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+.cubeActivitesPetImg:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* Fin réglage bloc*/
+.hauteurTitre {
+    height: 70px;
+}
+
+.titreActivites {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+}
+
+.imageActivites1 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 530px;
+}
+
+.imageActivites2 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.imageActivites3 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.imageActivites4 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 530px;
+}
+
+.imageActivites5 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.imageActivites6 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.tailleBlocFoot {
+    height: 150px;
+}
+
+.margeBlocFoot1 {
+    margin-left: 5%;
+}
+
+.margeBlocFoot2 {
+    margin-right: 15%;
+}
+
+.lienFoot {
+    color: black;
+}
+
+.divLienFoot {
+    height: 30px;
+}
+
+/* responsive*/
+@media all and (max-width:1292px) {
+
+    .sizeHebergements {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .sizePopulaire {
+        min-height: auto;
+        padding: 20px;
+    }
+}
+
+@media all and (max-width:992px) {
+
+    .centreLogo {
+        padding-left: 20%;
+    }
+
+    #hebergements {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .blocPopulaires {
+        flex: none;
+        width: 90%;
+        margin-left: 0;
+        padding: 5%;
+        height: auto;
+    }
+
+    .blocHebergements {
+        flex: none;
+        width: 90%;
+        margin-right: 0;
+        margin-top: 50px;
+        padding: 5%;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .bloc1 {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .bloc2 {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .imageHebergementTab1 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 700px;
+        height: 180px;
+    }
+
+    .imageHebergementTab2 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 700px;
+        height: 180px;
+    }
+
+    .imageHebergementTab3 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 700px;
+        height: 180px;
+    }
+
+    .imageHebergementTab4 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 700px;
+        height: 180px;
+    }
+
+    .imageHebergementTab5 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 700px;
+        height: 180px;
+    }
+
+    .imageHebergementTab6 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 700px;
+        height: 180px;
+    }
+
+    .cubeHebergements {
+
+        margin-bottom: 50px;
+    }
+
+    .cubeDetailHebergement {
+        height: auto;
+
+    }
+
+    .Activites {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .blocActivites {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cubeActivites {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .blocActivitesPetImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .cubeActivitesPetImg {
+        margin-bottom: 50px;
+    }
+
+    .imageActivites1,
+    .imageActivites2,
+    .imageActivites3,
+    .imageActivites4,
+    .imageActivites5,
+    .imageActivites6 {
+        height: 200px;
+    }
+
+    .flexColumnAround {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 5%;
+        margin-top: auto;
+    }
+
+    .margeBlocFoot1 {
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width:768px) {
+   
+    img {
+        width:100%;
+        object-fit: cover;
+    }
+
+    .sizeliens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sizelien12 {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .sizelien {
+        width: 50%;
+        height: 99px;
+    }
+
+    .bigger {
+        font-size: x-large;
+    }
+
+    .bordureNav {
+        border-bottom: 2px solid #f2f2f2;
+    }
+
+    .bordureNav:hover {
+        border-top: transparent;
+        border-bottom: 1px solid #0065fc;
+        cursor: pointer;
+    }
+
+    .mobileTitrePara {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    h1 {
+        padding-left: 3%;
+        align-items: center;
+    }
+   
+    p {
+        padding-left: 3%;
+        font-size: large;
+    }
+
+    h3 {
+        padding-right: 0%;
+    }
+
+    .info {
+        padding-left: 5%;
+    }
+
+    .margeFiltreTitre {
+        margin-right: 0%;
+        margin-left: 3%;
+    }
+
+    .filtreTexteIcon {
+        margin-bottom: 20px;
+    }
+
+    .bordureSearch {
+        width: auto;
+        border: none;
+        align-content: center;
+    }
+
+    .recherche {
+        width: 200px;
+        border: 1px solid #f2f2f2;
+    }
+
+    .buttonSearch {
+        width: 50px;
+        border-radius: 15px;
+    }
+
+    .desktopNone {
+        display: block;
+    }
+
+    .mobileNone {
+        display: none;
+    }
+
+    .mobileFiltreWrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filtreTexteIcon {
+        margin-bottom: 20px;
+    }
+
+    .imageHebergementMob1 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 300px;
+        height: 120px;
+    }
+
+    .imageHebergementMob2 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 300px;
+        height: 120px;
+    }
+
+    .imageHebergementMob3 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 300px;
+        height: 120px;
+    }
+
+    .imageHebergementMob4 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 300px;
+        height: 120px;
+    }
+
+    .imageHebergementMob5 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 300px;
+        height: 120px;
+    }
+
+    .imageHebergementMob6 {
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 300px;
+        height: 120px;
+    }
+
+    .cubeDetailHebergement {
+        padding-right: 0;
+    }
+
+    p {
+        padding-left: 3%;
+    }
+    .blocPopulaires{
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: auto;
+        height: auto;
+    }
+    .Activites{
+       
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        width: 300px;
+        height: auto;
+        padding-left: 10%;
+        
+    }
+    
+        
+    
+}
